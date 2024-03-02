@@ -24,6 +24,7 @@ public class App {
 
         System.out.println("crimeAndPunishment.getYearOfPublished() = " + crimeAndPunishment.getYearOfPublished());
 
+        System.out.println(crimeAndPunishment);
 
     }
 
