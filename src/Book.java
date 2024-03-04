@@ -5,9 +5,9 @@ public class Book {
     private Author author;
     private int yearOfPublished;
 
-    public Book(String bookTitle, Author nameOfAuthor, int yearOfPublished) {
+    public Book(String bookTitle, Author author, int yearOfPublished) {
         this.bookTitle = bookTitle;
-        this.author = nameOfAuthor;
+        this.author = author;
         this.yearOfPublished = yearOfPublished;
 
     }
@@ -16,7 +16,7 @@ public class Book {
         return this.bookTitle;
     }
 
-    public Author getNameOfAuthor() {
+    public Author getAuthor() {
         return this.author;
     }
 
@@ -30,11 +30,10 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "bookTitle='" + bookTitle + '\'' +
-                ", author=" + author +
-                ", yearOfPublished=" + yearOfPublished +
-                '}';
+        return "Книга " +
+                bookTitle +
+                ", " + author +
+                ", год публикации " + yearOfPublished;
     }
 
     @Override
